@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Triangle challenge (TS UI)</title>
+	<link rel="icon" href="https://developers.tradeshift.com/icons/favicon-32x32.png" />
+	<link rel="stylesheet" href="//d5wfroyti11sa.cloudfront.net/prod/client/ts-12.2.4.min.css" />
+	<script src="//d5wfroyti11sa.cloudfront.net/prod/client/ts-12.2.4.min.js"></script>
+	<meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+	<div data-ts="App">
+		<div data-ts="Main">
+			<div data-ts="Content">
+				<div data-ts="Panel">
+					<article>
+						<section class="desc">
+							<p>Enter three sides of a triangle to determine the Triangle Type.</p>
+						</section>
+						<form data-ts="Form" name="form" id="MyForm" novalidate>
+							<fieldset>
+								<label>
+									<span>Input first side</span>
+									<input type="number" class="user-input" id="firstSide" placeholder="Please enter side length"
+										required />
+								</label>
+								<dl class="ts-errors">
+									<dt>Error: Please enter a valid length of triangle.</dt>
+								</dl>
+							</fieldset>
+							<fieldset>
+								<label>
+									<span>Input second side</span>
+									<input type="number" class="user-input" id="secondSide" placeholder="Please enter side length"
+										required />
+								</label>
+								<dl class="ts-errors">
+									<dt>Error: Please enter a valid length of triangle.</dt>
+								</dl>
+							</fieldset>
+							<fieldset>
+								<label>
+									<span>Input third side</span>
+									<input type="number" class="user-input" id="thirdSide" placeholder="Please enter side length"
+										required />
+								</label>
+								<dl class="ts-errors">
+									<dt>Error: Please enter a valid length of triangle.</dt>
+								</dl>
+							</fieldset>
+							<div class="button-grp">
+								<button type="submit" data-ts="Button" data-ts.busy="false" class="ts-primary" id="submit">
+									<span>Check Triangle</span>
+								</button>
+							</div>
+						</form>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="bundle.js?a4edffd2ec54e5630310"></script></body>
+
+</html>
